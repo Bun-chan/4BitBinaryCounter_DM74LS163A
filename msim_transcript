@@ -1,0 +1,100 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do BinaryCounter_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:41:57 on Nov 07,2022
+# vcom -reportprogress 300 -93 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinaryCounter
+# -- Compiling architecture count of BinaryCounter
+# End time: 19:41:57 on Nov 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:42:21 on Nov 07,2022
+# vcom -reportprogress 300 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package NUMERIC_BIT_UNSIGNED
+# -- Loading package std_logic_textio
+# -- Compiling entity AAC2M2P1_tb
+# -- Compiling architecture behavioral of AAC2M2P1_tb
+# End time: 19:42:22 on Nov 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.aac2m2p1_tb
+# vsim -voptargs="+acc" work.aac2m2p1_tb 
+# Start time: 19:42:27 on Nov 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.numeric_bit(body)
+# Loading ieee.numeric_bit_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.aac2m2p1_tb(behavioral)#1
+# Loading work.binarycounter(count)#1
+add wave -position end  sim:/aac2m2p1_tb/CP_tb
+add wave -position end  sim:/aac2m2p1_tb/SR_tb
+add wave -position end  sim:/aac2m2p1_tb/P_tb
+add wave -position end  sim:/aac2m2p1_tb/PE_tb
+add wave -position end  sim:/aac2m2p1_tb/CEP_tb
+add wave -position end  sim:/aac2m2p1_tb/CET_tb
+add wave -position end  sim:/aac2m2p1_tb/Q_tb
+add wave -position end  sim:/aac2m2p1_tb/TC_tb
+add wave -position end  sim:/aac2m2p1_tb/simend
+add wave -position end  sim:/aac2m2p1_tb/ValidCheck
+add wave -position end  sim:/aac2m2p1_tb/ROM
+add wave -position end  sim:/aac2m2p1_tb/delay
+add wave -position end  sim:/aac2m2p1_tb/Points
+run
+# ** Note: PE=0
+#    Time: 100 ns  Iteration: 0  Instance: /aac2m2p1_tb/Counter
+run
+# ** Note: PE=0
+#    Time: 180 ns  Iteration: 0  Instance: /aac2m2p1_tb/Counter
+run
+# ** Note: INCREMENT ERROR
+#    Time: 205 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 225 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 245 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 265 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# ** Note: INCREMENT ERROR
+#    Time: 285 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# End time: 19:43:32 on Nov 07,2022, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0
