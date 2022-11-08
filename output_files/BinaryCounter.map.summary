@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Nov  8 06:42:34 2022
+Analysis & Synthesis Status : Successful - Wed Nov  9 06:46:40 2022
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : BinaryCounter
 Top-level Entity Name : BinaryCounter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 9
+Total registers : 5
 Total pins : 14
 Total virtual pins : 0
 Total block memory bits : 0

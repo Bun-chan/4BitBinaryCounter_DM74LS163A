@@ -17,7 +17,7 @@ entity BinaryCounter is port (
     TC:  out std_logic  -- Terminal Count
 );            		
 end BinaryCounter;
-
+--is TC the output or is Q the output?
 architecture count of BinaryCounter is
 
 	signal temp_output : std_logic_vector(3 downto 0) := "0000"; --use this as the count. Q can not be read. So set temp_output and then read it to set Q.
@@ -26,25 +26,21 @@ architecture count of BinaryCounter is
 	begin
 		if (rising_edge(CP)) then
 			if (SR='0') then
-				Q <= "0000"; --synchronous reset.
+				temp_output <= "0000"; --synchronous reset.
 			else
-				if  (PE='0') then
-				--preset output to match input. The counter is disabled when PE=0.
-				report "PE=0";
-					Q <= P;
+				if (PE = '1' and CET = '1' and CEP = '1') then
+					temp_output <= std_logic_vector(unsigned(temp_output) + "0001");
+				elsif (PE = '0') then 
+					temp_output <= P;
+				end if; --if PE = 1
+				if (temp_output) = "1110" then 
+					TC <= '1';
 				else
-					if (CEP='1' and CET='1') then --increment.
-						--CEP & CET must be both high to count.
-						if (temp_output = "1110") then
-							TC <= '1';
-						else
-							TC <= '0';
-						end if; --temp_output = 1110
-						temp_output <= std_logic_vector(unsigned(temp_output) + "0001"); --need to convert std_logic_vector. Can not increment it as is.
-						Q <= temp_output;
-					end if; --if cep=1....
-				end if; --if PE=0
+					TC <= '0';
+				end if; --if temp_output=1110
 			end if; --if SR=0
-		end if; --if rising_edge
-	end process count_process;
-end architecture count;
+		end if; --rising_edge
+	--Q <= temp_output;
+	end process;
+	Q <= temp_output;
+end count;

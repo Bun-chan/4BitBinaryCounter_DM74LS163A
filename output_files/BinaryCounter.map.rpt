@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BinaryCounter
-Tue Nov  8 06:42:34 2022
+Wed Nov  9 06:46:40 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov  8 06:42:34 2022       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov  9 06:46:40 2022       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; BinaryCounter                               ;
 ; Top-level Entity Name           ; BinaryCounter                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 9                                           ;
+; Total registers                 ; 5                                           ;
 ; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -177,31 +177,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 6        ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 11       ;
-;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 1        ;
-;     -- 5 input functions                    ; 1        ;
-;     -- 4 input functions                    ; 8        ;
-;     -- <=3 input functions                  ; 1        ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 9        ;
-;                                             ;          ;
-; I/O pins                                    ; 14       ;
-;                                             ;          ;
-; Total DSP Blocks                            ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; CP~input ;
-; Maximum fan-out                             ; 9        ;
-; Total fan-out                               ; 87       ;
-; Average fan-out                             ; 1.81     ;
-+---------------------------------------------+----------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 6              ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 8              ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 4              ;
+;     -- 5 input functions                    ; 1              ;
+;     -- 4 input functions                    ; 2              ;
+;     -- <=3 input functions                  ; 1              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 5              ;
+;                                             ;                ;
+; I/O pins                                    ; 14             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; temp_output[0] ;
+; Maximum fan-out                             ; 6              ;
+; Total fan-out                               ; 73             ;
+; Average fan-out                             ; 1.78           ;
++---------------------------------------------+----------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +209,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
-; |BinaryCounter             ; 11 (11)             ; 9 (9)                     ; 0                 ; 0          ; 14   ; 0            ; |BinaryCounter      ; BinaryCounter ; work         ;
+; |BinaryCounter             ; 8 (8)               ; 5 (5)                     ; 0                 ; 0          ; 14   ; 0            ; |BinaryCounter      ; BinaryCounter ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -219,23 +219,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 9     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BinaryCounter|Q[0]~reg0   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BinaryCounter|temp_output[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 
 
 +-----------------------------------------------------+
@@ -243,19 +243,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 9                           ;
-;     ENA               ; 6                           ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 11                          ;
-;     normal            ; 11                          ;
-;         1 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
+; arriav_ff             ; 5                           ;
+;     ENA               ; 4                           ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 8                           ;
+;     normal            ; 8                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 2                           ;
 ;         5 data inputs ; 1                           ;
-;         6 data inputs ; 1                           ;
+;         6 data inputs ; 4                           ;
 ; boundary_port         ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.03                        ;
+; Average LUT depth     ; 1.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -274,7 +274,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Tue Nov  8 06:42:24 2022
+    Info: Processing started: Wed Nov  9 06:46:32 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BinaryCounter -c BinaryCounter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -285,14 +285,14 @@ Info (12127): Elaborating entity "BinaryCounter" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 11 logic cells
+    Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Tue Nov  8 06:42:34 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Wed Nov  9 06:46:40 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

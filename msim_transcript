@@ -26,7 +26,7 @@
 # 
 # vcom -93 -work work {D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:41:57 on Nov 07,2022
+# Start time: 06:47:43 on Nov 09,2022
 # vcom -reportprogress 300 -93 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -34,14 +34,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity BinaryCounter
 # -- Compiling architecture count of BinaryCounter
-# End time: 19:41:57 on Nov 07,2022, Elapsed time: 0:00:00
+# End time: 06:47:43 on Nov 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# Modified modelsim.ini
-# Modified modelsim.ini
 vcom -reportprogress 300 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:42:21 on Nov 07,2022
+# Start time: 06:47:57 on Nov 09,2022
 # vcom -reportprogress 300 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -51,11 +49,11 @@ vcom -reportprogress 300 -work work D:/MSEE/5361/Week2/Assignment1_VHDL74LS163Bi
 # -- Loading package std_logic_textio
 # -- Compiling entity AAC2M2P1_tb
 # -- Compiling architecture behavioral of AAC2M2P1_tb
-# End time: 19:42:22 on Nov 07,2022, Elapsed time: 0:00:01
+# End time: 06:47:57 on Nov 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim -voptargs=+acc work.aac2m2p1_tb
 # vsim -voptargs="+acc" work.aac2m2p1_tb 
-# Start time: 19:42:27 on Nov 07,2022
+# Start time: 06:48:02 on Nov 09,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -80,21 +78,12 @@ add wave -position end  sim:/aac2m2p1_tb/ROM
 add wave -position end  sim:/aac2m2p1_tb/delay
 add wave -position end  sim:/aac2m2p1_tb/Points
 run
-# ** Note: PE=0
-#    Time: 100 ns  Iteration: 0  Instance: /aac2m2p1_tb/Counter
 run
-# ** Note: PE=0
-#    Time: 180 ns  Iteration: 0  Instance: /aac2m2p1_tb/Counter
 run
-# ** Note: INCREMENT ERROR
-#    Time: 205 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 225 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 245 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 265 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# ** Note: INCREMENT ERROR
-#    Time: 285 ns  Iteration: 0  Instance: /aac2m2p1_tb
-# End time: 19:43:32 on Nov 07,2022, Elapsed time: 0:01:05
+run
+run
+run
+# ** Note: This simulation is complete
+#    Time: 525 ns  Iteration: 0  Instance: /aac2m2p1_tb
+# End time: 07:17:11 on Nov 09,2022, Elapsed time: 0:29:09
 # Errors: 0, Warnings: 0

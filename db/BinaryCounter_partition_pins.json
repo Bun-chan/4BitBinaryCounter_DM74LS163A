@@ -24,19 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SR",
-					"strict" : false
-				},
-				{
 					"name" : "PE",
-					"strict" : false
-				},
-				{
-					"name" : "P[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CP",
 					"strict" : false
 				},
 				{
@@ -45,6 +33,18 @@
 				},
 				{
 					"name" : "CET",
+					"strict" : false
+				},
+				{
+					"name" : "SR",
+					"strict" : false
+				},
+				{
+					"name" : "P[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CP",
 					"strict" : false
 				},
 				{

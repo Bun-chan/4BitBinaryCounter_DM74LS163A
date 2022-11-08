@@ -11,10 +11,10 @@ z2
 cModel Technology
 Z0 dD:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter
 T_opt
-!s110 1667817747
-V:lFZS[6VkNEW45QB]iZPY1
+!s110 1667944083
+Vzo12KN<fI@nmZ[;]X2:9A2
 04 11 10 work aac2m2p1_tb behavioral 1
-=1-b07b2512a64d-6368e113-25e-122c
+=1-b07b2512a64d-636ace92-383-1ad4
 !s124 OEM10U2 
 o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
@@ -33,33 +33,33 @@ Z7 8D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp
 Z8 FD:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp
 l0
 L53 1
-V;2Ukij1[fU^2PDKlEc4Mj3
+VHcm1M?LD6EogimZi>ILoC2
 !s100 gS`_:X:U1F[NhndMH]ZN@3
 Z9 OL;C;2021.2;73
-33
-Z10 !s110 1667817742
+32
+Z10 !s110 1667944077
 !i10b 1
-Z11 !s108 1667817741.000000
+Z11 !s108 1667944077.000000
 Z12 !s90 -reportprogress|300|-work|work|D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp|
 Z13 !s107 D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1_tb.vhdp|
 !i113 0
 Z14 o-work work
-Z15 tExplicit 1 NoCoverage 1 CvgOpt 0
+Z15 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
 R4
 R5
 R6
-DEx4 work 11 aac2m2p1_tb 0 22 ;2Ukij1[fU^2PDKlEc4Mj3
+DEx4 work 11 aac2m2p1_tb 0 22 Hcm1M?LD6EogimZi>ILoC2
 !i122 1
 l146
 L61 259
-V1YdjQ3d7Kz`P:^]ObUf^e3
+VWBB0=d5mNjcgG@nQ8Xj`C2
 !s100 QMAneLjFj<aPm_fU=M2WF1
 R9
 !i119 1
-33
+32
 R10
 !i10b 1
 R11
@@ -69,7 +69,7 @@ R13
 R14
 R15
 Ebinarycounter
-Z16 w1667817645
+Z16 w1667943820
 R4
 R5
 R6
@@ -78,29 +78,29 @@ R0
 Z17 8D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd
 Z18 FD:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd
 l0
-L10 1
-V=85_4_5AfLob[kW9B]?6A3
-!s100 ZTY:k^PmA9A69e1B?THH^1
+L9 1
+VNMfL^HZWQ4DB=Q=b`W=EK1
+!s100 ge_=eGXKbNI`6U=I;6k1o0
 R9
 31
-Z19 !s110 1667817717
+Z19 !s110 1667944063
 !i10b 1
-Z20 !s108 1667817717.000000
+Z20 !s108 1667944063.000000
 Z21 !s90 -reportprogress|300|-93|-work|work|D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd|
 Z22 !s107 D:/MSEE/5361/Week2/Assignment1_VHDL74LS163BinaryCounter/AAC2M2P1.vhd|
 !i113 0
 Z23 o-93 -work work
-Z24 tExplicit 1 CvgOpt 0
+R15
 Acount
 R4
 R5
 R6
-DEx4 work 13 binarycounter 0 22 =85_4_5AfLob[kW9B]?6A3
+DEx4 work 13 binarycounter 0 22 NMfL^HZWQ4DB=Q=b`W=EK1
 !i122 0
-l25
-L22 30
-VlheYal<SQ5>Kzb4kBSFl50
-!s100 m?1MjFSIHjI=SgB@:1[AB1
+l24
+L21 26
+V52naWYI<^5?W01=Cc[FW63
+!s100 ZK>6>4WnTdf<@?LnRJfNE2
 R9
 31
 R19
@@ -110,4 +110,4 @@ R21
 R22
 !i113 0
 R23
-R24
+R15
